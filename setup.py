@@ -26,7 +26,7 @@ setup(
     packages=find_packages("bindings/python"),
     package_dir={"": "bindings/python"},
     package_data={
-        "tree_sitter_talon": ["*.pyi", "py.typed"],
+        "tree_sitter_talon": ["*.pyi", "py.typed", "node-types.json"],
         "tree_sitter_talon.queries": ["*.scm"],
     },
     ext_package="tree_sitter_talon",
