@@ -113,12 +113,13 @@ def _TalonKeyBindingDeclaration___init__(self, text: str, type_name: NodeTypeNam
 setattr(TalonKeyBindingDeclaration, "__init__", _TalonKeyBindingDeclaration___init__)
 
 # Custom __init__ for TalonSettingsDeclaration
-def _TalonSettingsDeclaration___init__(self, text: str, type_name: NodeTypeName, start_position: Point, end_position: Point, children: Optional[Sequence], right) -> None:
+def _TalonSettingsDeclaration___init__(self, text: str, type_name: NodeTypeName, start_position: Point, end_position: Point, children: Optional[Sequence], left, right) -> None:
     self.text = text
     self.type_name = type_name
     self.start_position = start_position
     self.end_position = end_position
     self.children = None
+    self.left = left
     self.right = _TalonBlock_with_comments(right, children)
 
 setattr(TalonSettingsDeclaration, "__init__", _TalonSettingsDeclaration___init__)
