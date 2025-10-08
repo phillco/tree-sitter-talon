@@ -129,10 +129,6 @@
       "members": [
         {
           "type": "SYMBOL",
-          "name": "command_declaration"
-        },
-        {
-          "type": "SYMBOL",
           "name": "app_declaration"
         },
         {
@@ -166,6 +162,10 @@
         {
           "type": "SYMBOL",
           "name": "settings_declaration"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "command_declaration"
         }
       ]
     },

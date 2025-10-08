@@ -74,7 +74,6 @@ module.exports = grammar({
 
     declaration: ($) =>
       choice(
-        $.command_declaration,
         $.app_declaration,
         $.face_declaration,
         $.deck_declaration,
@@ -84,6 +83,7 @@ module.exports = grammar({
         $.tag_import_declaration,
         $.key_binding_declaration,
         $.settings_declaration,
+        $.command_declaration,
       ),
 
     command_declaration: ($) =>
